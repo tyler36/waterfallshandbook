@@ -8,12 +8,16 @@
         "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
         "chat": "https://www.drupal.org/node/314178"
     },
-    "repositories": [
-        {
+    "repositories": {
+        "1": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
-    ],
+    },
     "require": {
         "composer/installers": "^1.9",
         "drupal/core-composer-scaffold": "^9.3",
@@ -31,7 +35,9 @@
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true
-        }
+        },
+        "vendor-dir": "vendor",
+        "preferred-install": "dist"
     },
     "extra": {
         "drupal-scaffold": {
